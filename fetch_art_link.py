@@ -1,3 +1,5 @@
+# python code referenced from https://github.com/imdadahad/spotify-get-current-playing-track/blob/master/main.py. thank you!
+
 import requests
 import time
 
@@ -5,8 +7,7 @@ from pprint import pprint
 
 
 SPOTIFY_GET_CURRENT_TRACK_URL = 'https://api.spotify.com/v1/me/player/currently-playing'
-ACCESS_TOKEN = 'BQCblTNE-pcuzOpLJQhe8opr_P7m5XrK3uL9Bv7zUbfBbKzogdaXnn74ZpvneIedmQbEl37Fj0WcEEv5XhBC-xljROiHiKCwQlYuUFbLfm167p7YQKZCmWf3TBQzEwGNBzgagz0j7BZ8QoHxAMZtr7XWFA2rDc8OqH6kE3KDkLJyc9GNAoEkBcEaZjRjUtAY7oM783HL'
-
+ACCESS_TOKEN = ''
 
 def get_current_track(access_token):
     response = requests.get(
