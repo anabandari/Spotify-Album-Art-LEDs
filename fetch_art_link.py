@@ -22,8 +22,6 @@ def get_current_track(access_token):
     track_name = json_resp['item']['name']
     artists = [artist for artist in json_resp['item']['artists']]
 
-    link = json_resp['item']['external_urls']['spotify']
-
     artist_names = ', '.join([artist['name'] for artist in artists])
 
     art_link = json_resp['item']['album']['images'][0]['url']
